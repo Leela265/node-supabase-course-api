@@ -1,4 +1,4 @@
-const express = require("epress");
+const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -14,7 +14,7 @@ app.use(logger);
 app.use("/api",courseRoutes);
 
 app.get("/",(req,res) => {
-    res.send("Course API is running");
+    res.send("Course Enrollment API is running");
 });
 
 const PORT = process.env.PORT || 5000;
